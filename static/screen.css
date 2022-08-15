@@ -1,0 +1,59 @@
+/* google font import */
+
+@import url('https://fonts.googleapis.com/css?family=Monda');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+
+/* outlines for testing */
+
+/*div {
+  outline: 1px rgba(255,0,0,0.1) solid;
+}*/
+
+/* tag selectors */
+
+body {
+  background-color: #262121;
+  
+  margin: 0;
+}
+
+h1 {
+  color: #c8c8c8;
+  font-family: font-family: 'Adamina', serif;;
+  font-size: 3em;
+  margin: 0;
+}
+
+p {
+  font-family:  'Advent Pro', sans-serif;
+  color: #e7e7e7;
+}
+
+
+/*firefox */
+input[type = "number"] {
+  -moz-appearance: textfield;
+}
+/* chrome, safari, edge, opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* media query */
+
+@media only screen and (min-width: 720px) {
+
+  #menu div {
+    grid-column: auto;
+    margin: 0;
+  }
+
+  #menu div:nth-child(3) {
+    border: none;
+    border-left: 3px solid #2A8;
+    border-right: 3px solid #2A8;
+  }
+
+}

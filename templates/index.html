@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Draw Outside of Box</title>
+    <meta name="description" content="24 hour food delivery. Order burgers, drinks, fries, and more!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--    <link rel="stylesheet" href="screen.css" /> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}" />
+    <link rel="stylesheet" href="/static/screen.css" />
+    <!-- typeface-->
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Advent+Pro:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+     <div>
+      <img src="/static/logo.svg">
+     </div>
+
+     <h1>Draw Outside of Box</h1>
+
+     <p>Have no idea what to draw today? Deciding on what to draw could be time consuming and tiring. <br>
+      No worries! With few clicks, Draw Outside of Box generates three random reference image for you. <br>
+      The random poetry input will give you a sense of atmosphere or vibe that you might want to adopt.<br>
+      Be free up and enjoy your drawing journey!</p>
+
+     <button> start </button>
+    
+     <div id="footer">
+      {{ disclaimer }}
+    </div>
+
+  </body>
+
+</html>
