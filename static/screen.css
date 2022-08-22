@@ -20,13 +20,26 @@ body {
   display: flex;
   justify-content:center ;
   align-items: center;
+  margin-top: 9px;
 }
 
-.title{
+.container{
+ max-width:fit-content;
+
+ font-family: 'Adamina';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 118px;
+ line-height: 161px;
+ margin-top: 45px;
+}
+/*.title{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 110px;
 }
+*/
 
 h1 {
   text-align: center;
@@ -37,33 +50,45 @@ h1 {
   font-size: 118px;
   line-height: 161px;
 
-  width: 1183px;
-  height: 161px;
-  left: 128.5px;
-  top: 102px;
+  margin: 0 auto;
+  
+  
 }
 
 .intro{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  margin-top: 110px;
+  
 }
 p {
   text-align: center;
-  width: 555.75px;
-  height: 295.72px;
-  left: 459.05px;
-  top: 373px;
-
   font-family: 'Advent Pro';
   font-style: normal;
   font-weight: 300;
   font-size: 25px;
   line-height: 30px;
-  text-align: center;
+  
 
   color: #E7E7E7;
 }
+
+.container-P{
+  margin-top: 132px;
+  padding-left: auto;
+  text-align: left;
+}
+
+.container-P .col-6{
+  font-family: 'Advent Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 33px;
+line-height: 39px;
+
+
+color: #D6D6D6;
+}
+
 
 .bttn{
   display: flex;
@@ -116,4 +141,17 @@ input::-webkit-inner-spin-button{
     border-right: 3px solid #2A8;
   }
 
+  .container-P{
+    padding-left: 530px;
+    
+  }
+
+} 
+  
+@media  (max-width: 576px){ 
+  h1{
+    font-size: 80px;
+    line-height: normal;
+  }
 }
+  
