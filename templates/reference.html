@@ -1,28 +1,9 @@
-<!DOCTYPE html> 
+{% extends 'base.html' %}
 
-<html>
+{% block title %} Draw Outside of Box {% endblock %}
 
-  <head>
 
-    <meta charset="utf-8">
-    <meta name="description" content="24 hour food delivery. Order burgers, drinks, fries, and more!" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Draw Outside of Box - reference</title>
-  <!--    <link rel="stylesheet" href="screen.css" />  the orders matter!! -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="dobscreen.css"/>
-    <!-- typeface-->
-    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Advent+Pro:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
-      <div id="logo">
-         <a href="index.html"><img src="/templates/logo.svg"> </a>
-      </div>
-
-       <div class="container-fluid"> 
-          <h1 >Draw Outside of Box</h1> 
-       </div>
+{% block content %} 
 
 
     <!--poem-->
@@ -57,21 +38,11 @@
          <div class="row" >
             <div class="col">
                 <div class="bttn-regenerate">
-                  <a href="generate.html"  class="bttn">  Regenerate  </a>
+                  <a href="{{url_for ('generate') }} "  class="bttn">  Regenerate  </a>
                 </div>
             </div>
          </div>
 
      </div>
 
-     
-     
-    
-    
-   <div id="footer">
-       <p>Photos provided by Unsplash</p>
-    </div>
-
-  </body>
-
-</html>
+{% endblock %}

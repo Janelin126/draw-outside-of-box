@@ -1,29 +1,9 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 
-<html>
 
-  <head>
+{% block title %} Draw Outside of Box {% endblock %}
 
-    <meta charset="utf-8">
-    <meta name="description" content="24 hour food delivery. Order burgers, drinks, fries, and more!" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Draw Outside of Box</title>
-    <!--    <link rel="stylesheet" href="screen.css" /> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="dobscreen.css"/>
-    <!-- typeface-->
-    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Advent+Pro:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
-     <div id="logo">
-      <img src="logo.svg">
-     </div>
-
-     <div class="container-fluid"> 
-     <h1 >Draw Outside of Box</h1> 
-    </div>
-
+{% block content %} 
     <div class="container">
       
       <div class="row">
@@ -37,7 +17,7 @@
       </div>
     </div>
 
-      <form action="generate.html" class="nameinput">
+      <form action="{{ url_for('generate') }}" method="get" class="nameinput">
         <div>
           <input type="text"  placeholder="Enter your name, please.">
         </div>
@@ -49,11 +29,6 @@
 
       </form>
   
+      
+{% endblock %}    
     
-    <div id="footer">
-      <p>Photos provided by Unsplash</p>
-    </div>
-
-  </body>
-
-</html>

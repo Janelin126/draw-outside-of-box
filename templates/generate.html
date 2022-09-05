@@ -1,28 +1,9 @@
-<!DOCTYPE html> 
+{% extends 'base.html' %}
 
-<html>
+{% block title %} Draw Outside of Box {% endblock %}
 
-  <head>
 
-    <meta charset="utf-8">
-    <meta name="description" content="24 hour food delivery. Order burgers, drinks, fries, and more!" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Draw Outside of Box - generateor</title>
-  <!--    <link rel="stylesheet" href="screen.css" />  the orders matter!! -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="dobscreen.css"/>
-    <!-- typeface-->
-    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Advent+Pro:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
-     <div id="logo">
-       <a href="index.html"><img src="/static/logo.svg"> </a>
-     </div>
-
-     <div class="container-fluid"> 
-      <h1 >Draw Outside of Box</h1> 
-     </div>
+{% block content %} 
      
       <div class="container">
       
@@ -39,7 +20,7 @@
           <div class="col-4"></div>
           
           <div class="col-4">
-          <form id="threeimg" action="reference.html">
+          <form id="threeimg" action="{{ url_for('reference') }}" method="get">
             <div class="form-group1">
               <label for="image1">Image One</label>
               <input type="text" id="image1" placeholder="Human, Animal, Vegetation, Nauture, or Man-made">
@@ -67,11 +48,5 @@
         </div>
      </div>
 
-    
-   <div id="footer">
-       <p>Photos provided by Unsplash</p>
-    </div>
-
-  </body>
-
-</html>
+     {% endblock %} 
+   
