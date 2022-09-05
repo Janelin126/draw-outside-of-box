@@ -5,44 +5,71 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Draw Outside of Box - generateor</title>
     <meta name="description" content="24 hour food delivery. Order burgers, drinks, fries, and more!" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Draw Outside of Box - generateor</title>
   <!--    <link rel="stylesheet" href="screen.css" />  the orders matter!! -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}" />
-    <link rel="stylesheet" href="/static/screen.css" />
+    <link rel="stylesheet" href="dobscreen.css"/>
     <!-- typeface-->
     <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Advent+Pro:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
-
-    
   </head>
 
   <body>
      <div id="logo">
-      <a href="index.html"><img src="/static/logo.svg"> </a>
+       <a href="index.html"><img src="/static/logo.svg"> </a>
      </div>
+
+     <div class="container-fluid"> 
+      <h1 >Draw Outside of Box</h1> 
+     </div>
+     
+      <div class="container">
+      
+       <div class="row">
+         <div class="col-3"></div>
+         <div class="col-6"><p class="greet">Hello Visitor! <br> Please enter a category for each image.</p></div>
+         <div class="col-3"></div>
+       </div>
+      </div>
 
      <div class="container">
-      <h1>Draw Outside of Box</h1> 
+        <div class="row">
+          
+          <div class="col-4"></div>
+          
+          <div class="col-4">
+          <form id="threeimg" action="reference.html">
+            <div class="form-group1">
+              <label for="image1">Image One</label>
+              <input type="text" id="image1" placeholder="Human, Animal, Vegetation, Nauture, or Man-made">
+            </div>
+
+            <div class="form-group2">
+              <label for="image2">Image Two</label>
+              <input type="text" id="image2" placeholder="Human, Animal, Vegetation, Nauture, or Man-made">
+            </div>
+
+            <div class="form-group3">
+              <label for="image1">Image One</label>
+              <input type="text" id="image1" placeholder="Human, Animal, Vegetation, Nauture, or Man-made">
+            </div>
+
+            <div class="bttn">
+              <input type="submit" value="Generate" >
+               
+            </div>
+          </form>
+          </div>
+          
+          <div class="col-4"></div>
+
+        </div>
      </div>
 
-    <div class="container-P">
-      <div class="row">
-        <div class="col-6"> Reference Image </div>
-        <div class=""
-      </div>
-    </div>
-    <p>one</p>  
-
     
-
-    <div class="bttn">
-     <a href="reference.html"> <button> <div class="bttntxt">generate </div> </button> </a>
-    </div>
-    
-     <div id="footer">
-      {{ disclaimer }}
+   <div id="footer">
+       <p>Photos provided by Unsplash</p>
     </div>
 
   </body>

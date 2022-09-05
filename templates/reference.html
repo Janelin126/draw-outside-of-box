@@ -1,38 +1,75 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 
 <html>
 
   <head>
 
     <meta charset="utf-8">
-    <title>Draw Outside of Box - Reference</title>
     <meta name="description" content="24 hour food delivery. Order burgers, drinks, fries, and more!" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!--    <link rel="stylesheet" href="screen.css" /> -->
+    <title>Draw Outside of Box - reference</title>
+  <!--    <link rel="stylesheet" href="screen.css" />  the orders matter!! -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}" />
-    <link rel="stylesheet" href="/static/screen.css" />
+    <link rel="stylesheet" href="dobscreen.css"/>
     <!-- typeface-->
     <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Advent+Pro:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
   </head>
 
   <body>
-     <div id="logo">
-      <a href="index.html"><img src="/static/logo.svg"> </a>
-     </div>
+      <div id="logo">
+         <a href="index.html"><img src="/templates/logo.svg"> </a>
+      </div>
 
+       <div class="container-fluid"> 
+          <h1 >Draw Outside of Box</h1> 
+       </div>
+
+
+    <!--poem-->
      <div class="container">
-      <h1>Draw Outside of Box</h1> 
+        <div class="row">
+            <div class="col-1"></div>
+
+            <div class="col-3">
+                <h5>Poem Title</h5> 
+                <p>by John Smith</p>
+            </div>
+
+            <div class="col-6"><p class="poem"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Integer vitae aliquet eget duis nulla nibh sagittis. Neque, vel neque, 
+                fusce condimentum adipiscing porta ut ullamcorper interdum. Tortor sit nam gravida 
+                sed eget at risus. Ut nunc quis egestas porttitor sit nisl pulvinar quis.</p></div>
+
+            <div class="col-2"></div>
+        </div>
+     </div>
+      
+
+     <!--images-->
+     <div class="class" id="imageframe">
+
+         <div class="row">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+            <div class="col-4">3</div>
+         </div>
+
+         <div class="row" >
+            <div class="col">
+                <div class="bttn-regenerate">
+                  <a href="generate.html"  class="bttn">  Regenerate  </a>
+                </div>
+            </div>
+         </div>
+
      </div>
 
      
-
-    <div class="bttn">
-     <a href="generate.html"> <button> <div class="bttntxt">regenerate </div> </button> </a>
-    </div>
+     
     
-     <div id="footer">
-      {{ disclaimer }}
+    
+   <div id="footer">
+       <p>Photos provided by Unsplash</p>
     </div>
 
   </body>

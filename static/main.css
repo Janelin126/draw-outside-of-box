@@ -1,0 +1,14 @@
+/* css for DOB */
+
+body {
+    background-color: #262121;
+    margin: 0;
+  }
+  
+  #logo {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
