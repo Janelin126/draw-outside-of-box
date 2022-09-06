@@ -25,9 +25,8 @@ def generate():
 def reference():
     db = sqlite3.connect(MENUDB)
     print(db)
-    cur = conn.cursor()
-    cur.execute("SELECT title FROM poems")
-    rows = cur.
+    
+   
     return render_template('reference.html')
 
 if __name__ == "__main__":
