@@ -204,7 +204,7 @@ p .poem{
   margin-bottom: 80px;
 }
 
-#imageframe .col-4{
+#imageframe .col-xl-4{
   height: 600px;
   border:2px solid #e0dfdfd3;
   padding-left: 10px;
