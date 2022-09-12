@@ -32,6 +32,7 @@ def reference():
     db = sqlite3.connect(MENUDB)
     print(db)
     
+    cur = db.execute('SELECT ')
    
     return render_template('reference.html')
 
